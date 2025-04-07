@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .round-shadow {
+    @apply shadow-[0_0_0.4rem_#F8F4E1];
+  }
+
+  .text-effect {
+    @apply text-[15px];
+  }
+  .scupL {
+    transform: scale(1.4);
+  }
+  .scupH {
+    transform: scale(2);
+  }
+  .scdownL {
+    transform: scale(1.2);
+  }
+  .scdownH {
+    transform: scale(1.8);
+  }
+}
