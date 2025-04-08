@@ -69,7 +69,7 @@ let songData;
 
 let folders = [];
 async function getSongs() {
-  const response = await fetch("https://spotify-q1lc.onrender.com");
+  const response = await fetch("https://spotify-q1lc.onrender.com/get-songs");
   const data = await response.json();
   return data;
 }
