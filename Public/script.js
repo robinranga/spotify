@@ -90,7 +90,7 @@ function genPlaylist(data) {
                             class="w-full h-full rounded-md bg-cover" 
                           />
                           <div
-                            class="absolute bg-black bottom-[30px] right-[30px] scale-150 lg:scale-125 xl:scale-110"
+                            class="absolute bg-black rounded-[50%] bottom-[30px] right-[30px] scale-150 lg:scale-125 xl:scale-110"
                           > 
                             <i
                               class="fa-solid fa-circle-play fa-2xl"
@@ -338,7 +338,10 @@ const interval = {
   start: function () {
     const totalDuration = `0${Math.floor(
       currentSong.duration / 60
-    )}:${Math.floor(currentSong.duration % 60)}`;
+    )}:${Math.floor(currentSong.duration % 60)
+      .toString()
+      .padStart(2, "0")
+    }`;
 
     timestamp2.innerText = totalDuration;
 
@@ -370,7 +373,10 @@ const interval = {
   },
 
   resume: function () {
-    this.isPaused = false;
+    if (this.isPaused) {
+      this.isPaused = false;
+      this.rafId = requestAnimationFrame(() => this.start());
+    }
   },
 
   stop: function () {
