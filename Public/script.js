@@ -69,7 +69,7 @@ let songData;
 
 let folders = [];
 async function getSongs() {
-  const response = await fetch("http://192.168.1.9:3000/get-songs");
+  const response = await fetch("http://localhost:3000/get-songs");
   const data = await response.json();
   return data;
 }
@@ -87,7 +87,7 @@ function genPlaylist(data) {
                           <img
                             src=${key.img}
                             alt="Playlist photo"
-                            class="w-full h-full rounded-md"
+                            class="w-full h-full rounded-md bg-cover" 
                           />
                           <div
                             class="absolute bg-black bottom-[30px] right-[30px] scale-150 lg:scale-125 xl:scale-110"
