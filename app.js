@@ -29,4 +29,4 @@ app.get('/account', (req, res) => {
     res.render('account')
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
