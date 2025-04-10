@@ -22,9 +22,7 @@ A full-featured Spotify-inspired music player built using Node.js, Express, and 
 
 ![Screen Shot 1](https://github.com/user-attachments/assets/780eb46f-28c7-4b5e-9780-72af65c49827)
 
-![Screen Shot 2](https://github.com/user-attachments/assets/61a9a18f-9f21-483a-b53a-18d37038aef8)
-
-![Screen Shot 4](https://github.com/user-attachments/assets/17e9a7d1-7aaf-4253-aee4-21b73b588cdf)
+![Screen Shot 2](https://github.com/user-attachments/assets/61a9a18f-9f21-483a-b53a-18d37038aef8)  ![Screen Shot 4](https://github.com/user-attachments/assets/17e9a7d1-7aaf-4253-aee4-21b73b588cdf)
 
 ## 🤘 Author
 - Robin Ranga (@robinranga)
